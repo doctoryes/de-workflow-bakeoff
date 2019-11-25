@@ -14,7 +14,7 @@ default_args = {
 
 BASH_COMMAND = 'sleep $[ ( $RANDOM % 30 )  + 1 ]s && date && echo push_rev2'
 
-dag = DAG('example2_dag',
+dag = DAG('julia_example_dag_v1',
 			max_active_runs=3,
 			schedule_interval=timedelta(minutes=5),
 			default_args=default_args)
